@@ -19,10 +19,10 @@ namespace SalesWebMVC.Data
         public void Seed()
         {
             if (_context.Department.Any() ||
-                _context.Seller.Any() ||
-                _context.SalesRecord.Any())
+                            _context.Seller.Any() ||
+                            _context.SalesRecord.Any())
             {
-                return; //DB has been seeded
+                return; // DB has been seeded
             }
 
             Department d1 = new Department(1, "Computers");
